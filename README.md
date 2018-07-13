@@ -55,10 +55,6 @@ $("#livepostcodesearch").keydown(function(){
                             }
                             if(val < 4){
                                  $('#postcoderesult p').text('Enter your postcode'); 
-                            }
-                  
-                  console.log(region_north);
-          
-          }
-          
+                            }   
+          }        
        });
