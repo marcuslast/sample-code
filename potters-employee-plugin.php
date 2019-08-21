@@ -8,7 +8,7 @@
        License: GPL2
    */
 
-// CREATED DECEMBER 2018
+// CREATED JULY 2019
 // This plugin creates wordpress users from a CSV
 
 add_action( 'admin_post_nopriv_passwordreset', 'yourpotters_passwordreset' );
@@ -30,9 +30,9 @@ add_filter( 'wp_mail_from_name', function( $name ) {
 	return 'Your Potters';
 });
 
-    add_action( 'admin_menu', 'activecampaign_action' );
+    add_action( 'admin_menu', 'add_potters_recruitment_option' );
 
-      function activecampaign_action() {
+      function add_potters_recruitment_option() {
           # the add_action ensures this is only run when admin pages are displayed
           // add_menu_page( 'UserCreation', 'UserCreation', 'manage_options', 'query-string-parameter', 't1q_create_users');
           add_menu_page( 'UserCreation', 'UserCreation', 'manage_options', 't1q_manage_users_page', 't1q_manage_users_page');
